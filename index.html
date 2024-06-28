@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./src/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com">
+        </script>
+    </head>
+<body>
+    <header class="justify-between sidebar sticky top-0 left-0 nr__cont mx-auto py-5 ">
+        <nav class="flex items-center justify-between">
+            <div>
+                <a href="./index.html"
+                    class="text-2xl md:text-4xl text-blue-500 font-semibold font-sans flex justify-center items-center">Tripma</a>
+            </div>
+            <ul
+                class="flex  flex-col-reverse md:flex-row fixed top-0 -right-full w-1/2 h-lvh md:w-auto md:h-auto md:bg-transparent items-start md:items-center px-4 justify-center bg-gray-300 md:static md:gap-2">
+
+
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Flights</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Hotels</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Packages</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Sign
+                        in</a></li>
+                <button
+                    class="toggle2 top-4 left-4 transition ease-inh absolute text-xl px-1 rounded text-blue-500 md:hidden"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <button class="bg-blue-600 w-20 h-10 rounded text-white">Sign up</button>
+            </ul>
+            <div class=" md:hidden">
+                <button class="toggle text-blue-500 bg-slate-300 w-6 rounded"><i
+                        class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+        </nav>
+    </header>
+    <!-- <section class="my-5 flex justify-center    ">
+        <!-- <div class="flex gap-2">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <button class="bg-blue-500 border-blue-500 border-2 w-20 h-10 rounded text-white" >Search</buttonc>
+        </div> -->
+      </section>
+
+      <main>
+        <section class="nr_cont grid gap-3 px-5 ">
+            <h1 class="text-blue-500 text-xl">Passenger information</h1>
+            <p class="text-blue-500 text-xs w-1/2">Enter the required information for each traveler and be sure that it exactly matches the government-issued ID presented at the airport.</p>
+            <h1 class="text-blue-500 text-xl">Passenger 1 (Adult)</h1>
+        </section>
+        <section class="nr_cont px-5 py-5 grid  gap-5 grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 gap-2 ">
+                <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-4 w-full">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-10 px-3" placeholder="First name*">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-10 px-3" placeholder="Middle">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-10 px-3" placeholder="Last name*">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-10 px-3" placeholder="Suffix">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-10 px-3" placeholder="Date of birth*">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-5">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-12 px-3" placeholder="First name*">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-12 px-3" placeholder="First name*">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-12 px-3" placeholder="First name*">
+                    <input type="text" class="border-2 border-blue-500 outline-none rounded w-full h-12 px-3" placeholder="First name*">
+ 
+                </div>
+            </div>
+            <div class="grid grid-cols-1">
+                <div class="flex gap-2">
+                    <div class="w-12 grid items-center">
+                        <img src="https://s3-alpha-sig.figma.com/img/183e/cad2/d9ae9ac40c79bcebdc1b8f3f845c7f6b?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGlgfpQnyMG0bL1Ixpktnr05OhkEyzPBwsPiYohIgCoVYrHPU5RBAga1vdD0~V~W3Hsky6MhEilF7QdaEqR9z1~JC3MhexnnqVn2Buqr8nXMi5k-c7zuVvSCPgm42ldJ~1K1smWd039Ca3MlSC~FFHJK~TKhlDMSARGHTggI8okjdhdS~9itQa0bFxyZ5oO7T9TJmNaF-MgVkMpI-2aYGfQtz6d2RA6eqLghTH~V-pQcG2LAzYoHshYkpGH~kqFqNz~TFjXB2Uu72xfi6s1bvs9ghJsH75QCF7LbXUyMC0xBrHIfPfasQKIF7AikxOtWRTgDH-G5EH4982cHkm-ixQ__" alt="" width="40px" height="40px">
+                    </div>
+                    <div class="grid w-11/12 grid-cols-2 justify-between">
+                        <h1 class="text-xl">Hawaiian Airlines</h1>
+                        <h1 class="text-xl">16h 45m (+1d)</h1>
+                        <h1 class="text-xs text-gray-700">FIG4312</h1>
+                        <h1 class="text-xl">7:00 AM - 4:15 PM</h1>
+                        <h1></h1>
+                        <h1 class="text-xs text-gray-700">2h 45m in HNL</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="w-12 grid items-center">
+                        <img src="https://s3-alpha-sig.figma.com/img/183e/cad2/d9ae9ac40c79bcebdc1b8f3f845c7f6b?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGlgfpQnyMG0bL1Ixpktnr05OhkEyzPBwsPiYohIgCoVYrHPU5RBAga1vdD0~V~W3Hsky6MhEilF7QdaEqR9z1~JC3MhexnnqVn2Buqr8nXMi5k-c7zuVvSCPgm42ldJ~1K1smWd039Ca3MlSC~FFHJK~TKhlDMSARGHTggI8okjdhdS~9itQa0bFxyZ5oO7T9TJmNaF-MgVkMpI-2aYGfQtz6d2RA6eqLghTH~V-pQcG2LAzYoHshYkpGH~kqFqNz~TFjXB2Uu72xfi6s1bvs9ghJsH75QCF7LbXUyMC0xBrHIfPfasQKIF7AikxOtWRTgDH-G5EH4982cHkm-ixQ__" alt="" width="40px" height="40px">
+                    </div>
+                    <div class="grid w-11/12 grid-cols-2 justify-between">
+                        <h1 class="text-xl">Hawaiian Airlines</h1>
+                        <h1 class="text-xl">16h 45m (+1d)</h1>
+                        <h1 class="text-xs text-gray-700">FIG4312</h1>
+                        <h1 class="text-xl">7:00 AM - 4:15 PM</h1>
+                        <h1></h1>
+                        <h1 class="text-xs text-gray-700">2h 45m in HNL</h1>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div>
+                        <h1>Subtotal</h1>
+                        <h1>Taxes and Fees</h1>
+                        <h1>Total</h1>
+                    </div>
+                    <div></div>
+                    
+                </div>
+            </div>
+        </section>
+      </main>
+      <footer class="bg-white" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <img class="h-20" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">About </h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">About Tripma</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">How it works</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Forum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Partner with us</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Partnership programs</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Affiliate program</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Connectivity partners</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Promotions and events</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Integrations</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Loyalty program</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Terms of service</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Trust and safety</a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Accessibility</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Get the app</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Tripma for Android</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Tripma for iOS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Mobile site</a>
+                                </li>
+                                <img src="./img/Tripma/column/link/app store.svg" alt="">
+                                <img src="./img/Tripma (1)/column/link/link/google play.svg" alt="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t flex justify-between border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <p class="text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

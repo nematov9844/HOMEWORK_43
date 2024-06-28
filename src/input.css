@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nr__cont{
+    width: 85%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.active{
+    ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        gap: 30px;
+    }
+    .toggle2{
+        transform: rotate(180deg);
+        transition: all 0.6;
+    }
+}
+
+header {
+    ul{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        transition: all 2s;
+    }
+    .toggle2{
+        transition: all 1s;
+    }
+}
+
+.nr{
+    h1{
+        border: 1px solid rgb(161, 144, 144);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.card{
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
